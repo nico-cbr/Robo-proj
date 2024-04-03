@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+:root{
+  --cor-background: #d4ecf5;
+  --branco: #fff;
+  --cor-botao: hsl(200, 100%, 50%);
+  --cor-hover: hsl(200, 100%, 27%);
+  --cor1: #b6fffa;
+  --cor2: #98e4ff;
+  --cor3: #80b3ff;
+  --cor4: #687eff;
+}
+
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Silkscreen', sans-serif;
+}
+
+body{
+  background-color: var(--cor-background);
+}
+
+.corpo{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fundo{
+  margin: 2rem 0 0;
+  width: 17rem;
+  height: 25rem;
+  background-image: url("../assets/fundo-celular.png");
+  background-repeat: no-repeat;
+  background-size: 20rem;
+  background-position: center;
+}
+
+.container {
+  margin: 2rem 2rem;
+  background-color: var(--branco);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn{
+  font-size: 20px;
+  background-color: var(--cor-botao);
+  border: 1px solid var(--cor-botao) ;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: var(--branco);
+  outline: none;
+  font-weight: 400;
+}
+
+.btn:hover {
+  background-color: hsl(200, 100%, 27%);
+  border-color: rgb(0, 3, 31);
+}
+

@@ -1,7 +1,13 @@
+// ! DECLARANDO VARIAVEIS
+
 const textElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById( 'option-buttons')
 
-let state = {}
+let state = {} // TODO: VARIAVEL QUE SETANDO O ESTADO
+
+
+
+//! DECLANDO FUNCÕES
 
 function startGame() {
 state = {}
@@ -15,6 +21,8 @@ function showTextNode(textNodeIndex) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild)
   }
 
+  // ? FOR EACH RODANDO A ESCOLHA FEITA
+
   textNode.options.forEach(option => {
     if (showOption(option)) {
       const button = document.createElement('button')
@@ -26,6 +34,7 @@ function showTextNode(textNodeIndex) {
   })
 }
 
+// ! FUNÇÂO RODANDO AS OPÇÕES
 
 function showOption(option) {
   return option.requiredState == null || option.requiredState(state)
@@ -38,6 +47,9 @@ function selectOption(option) {
   state = Object.assign(state, option.setState)
   showTextNode(nextTextNodeId)
 }
+
+
+// ? array com os textos
 
 const textNodes = [
   {
@@ -83,11 +95,11 @@ const textNodes = [
   options: [
       {
         text: 'sim, me desculpe...',
-        nextText: 0 //inserir depois
+        nextText: 0 //* inserir depois
       },
       {
         text: 'infelizmente sim.',
-        nextText: 0 //inserir depois
+        nextText: 0 //* inserir depois
       },
       {
         text: 'não',
@@ -109,3 +121,4 @@ const textNodes = [
 ]
 
 startGame()
+
