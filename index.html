@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
-  <script defer src="main.js"></script>
+  <title>One Chance</title>
 </head>
 <body>
+  <header>
+    <nav class="nav-bar">
+      <ul class="lista">
+        <li><a href="./Inicio.html" class="ativo">Home</a></li>
+        <li><a href="./Cred.html">Créditos</a></li>
+        <li><a href="./index.html">Reiniciar</a></li>
+        <li><button type="button" id="mute"><img src="./assets/volume-baixo.png" alt="Mute"></button></li>
+      </ul>
+  </header>
+
   <section class="corpo">
-    <!-- <header>
-      <nav>
-        <ul class="lista">
-          <li class="itens"></li>
-          <li class="itens"></li>
-          <li class="itens"></li>
-        </ul>
-      </nav>
-    </header> -->
     <div class="fundo"></div>
   <div class="container">
     <div id="text">texto</div>
@@ -28,7 +30,7 @@
     </div>
   </div>
 </section>
-  <audio src="./assets/OST-Christina-Kuong.mp3" id="ost"></audio>
   <!-- https://forum.freecodecamp.org/t/how-to-play-mp3-in-the-background-music-automatically/308554 -->
+  <script defer src="main.js"></script>
 </body>
 </html>

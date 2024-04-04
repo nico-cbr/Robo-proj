@@ -1,9 +1,24 @@
 // ! DECLARANDO VARIAVEIS
-
-const textElement = document.getElementById('text')
-const optionButtonsElement = document.getElementById( 'option-buttons')
+const textElement = document.getElementById('text');
+const optionButtonsElement = document.getElementById( 'option-buttons');
 
 let state = {} // TODO: VARIAVEL QUE SETANDO O ESTADO
+
+// AUDIO
+
+const audio = new Audio();
+audio.src = "./assets/OST-Christina-Kuong.mp3"
+
+const button = document.getElementById('mute')
+button.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.volume = 0.2;
+    audio.play();
+    
+  } else {
+    audio.pause();
+  }
+});
 
 
 
@@ -121,4 +136,3 @@ const textNodes = [
 ]
 
 startGame()
-
