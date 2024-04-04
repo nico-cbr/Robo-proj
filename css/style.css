@@ -22,6 +22,69 @@ body{
   background-color: var(--cor-background);
 }
 
+header{
+  height: 50px;
+  font-size: 15pt;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+  background-color: var(--cor3);
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-branco);
+  font-size: 1rem;
+}
+
+li{
+  list-style: none;
+}
+
+.nav-bar{
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: initial;
+  align-items: center;
+}
+
+.nav-bar .lista{
+  display: flex;
+  margin: 0 1.5rem;
+  justify-content: space-evenly;
+  align-items:center;
+  gap: 2rem;
+}
+
+.nav-bar .lista a:hover{
+  color: var(--cor-hover);
+}
+
+.nav-bar .lista button img{
+  width: 1rem;
+  height: 1rem;
+}
+
+.nav-bar .lista button{
+  border: 1px solid var(--cor-hover);
+  background-color: var(--cor-botao);
+  width: 2rem;
+  height: 1.5rem;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.nav-bar .lista button:hover{
+  background-color: var(--cor-hover);
+}
+
+.nav-bar .lista button:active{
+  background-color: var(--cor3);
+}
+
 .corpo{ 
   display: flex;
   justify-content: center;
@@ -30,7 +93,7 @@ body{
 }
 
 .fundo{
-  margin: 2rem 0 0;
+  margin: 1.5rem 0 0;
   width: 17rem;
   height: 25rem;
   background-image: url("../assets/fundo-celular.png");
@@ -40,7 +103,7 @@ body{
 }
 
 .container {
-  margin: 2rem 2rem;
+  margin: 1.5rem 2rem;
   background-color: var(--branco);
   padding: 10px;
   border-radius: 5px;
